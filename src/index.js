@@ -18,8 +18,16 @@ class Content extends React.Component<{}, State> {
     this.setState({
       toggle: tabname
     });
+    //console.log(option);
   };
   render() {
+  	let option;
+  	if(this.state.toggle == "termloan"){
+       option = <TermLoan />
+    }
+    else{
+       option = <CreditCard />
+    }
     return (
       <div className="lending-health-card__StyledCard-sc-9ftaap-0 jDVoTD">
         <div className="lending-health-card__HeightController-sc-9ftaap-3 juOckN">
@@ -51,8 +59,7 @@ class Content extends React.Component<{}, State> {
                   <span className="tab__Text-sc-6n7uxs-0 dUGzqi">Term loan</span>
                 </div>
               </div>
-              <CreditCard />
-              {/* <TermLoan /> */}
+              {option}
             </section>
           </div>
         </div>
