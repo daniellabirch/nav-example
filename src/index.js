@@ -11,18 +11,31 @@ type State = {
 
 class Content extends React.Component<{}, State> {
   state = {
-    toggle: null
+    toggle: null,
+    creditcardClass: "iylyVK",
+    termloanClass: ""
   };
 
   changeContent = (tabname,e) => {
     this.setState({
       toggle: tabname
     });
-    //console.log(option);
+    if(tabname === "creditcard"){
+		this.setState({
+      		creditcardClass: "iylyVK",
+    		termloanClass: ""
+    	});
+    }
+    else if(tabname === "termloan"){
+		this.setState({
+      		creditcardClass: "",
+    		termloanClass: "iylyVK"
+    	});
+    }
   };
   render() {
   	let option;
-  	if(this.state.toggle == "termloan"){
+  	if(this.state.toggle === "termloan"){
        option = <TermLoan />
     }
     else{
@@ -35,7 +48,7 @@ class Content extends React.Component<{}, State> {
             <section className="lending-health-card__Grid-sc-9ftaap-2 eGLyDO">
               <div className="tab-menu__TabGroup-prdu2l-0 liCisV">
                 <div
-                  className="tab__StyledTab-sc-6n7uxs-1 iylyVK"
+                  className={"tab__StyledTab-sc-6n7uxs-1 dkSLxl " + this.state.creditcardClass}
                   icon="https://dxkdvuv3hanyu.cloudfront.net/design-assets/icons/pbr/credit-card-light.svg"
                   tabname="creditcard"
                   onClick={()=>this.changeContent("creditcard")}
@@ -47,7 +60,7 @@ class Content extends React.Component<{}, State> {
                   <span className="tab__Text-sc-6n7uxs-0 dUGzqi">Credit card</span>
                 </div>
                 <div
-                  className="tab__StyledTab-sc-6n7uxs-1 dkSLxl"
+                  className={"tab__StyledTab-sc-6n7uxs-1 dkSLxl " + this.state.termloanClass}
                   icon="https://dxkdvuv3hanyu.cloudfront.net/design-assets/icons/pbr/loan-dark.svg"
                   tabname="termloan"
                   onClick={()=>this.changeContent("termloan")}
