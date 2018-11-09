@@ -4,11 +4,11 @@ import "./App.css";
 class TermLoan extends Component {
   render() {
     return (
-      <div class="action-required-card__StyledCard-sc-1u7nvl-2 bowelr">
+      <div className="action-required-card__StyledCard-sc-1u7nvl-2 bowelr">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 60 60"
-          class="small-biz-icon___default-sc-19m87vy-0 bRsOmD"
+          className="small-biz-icon___default-sc-19m87vy-0 bRsOmD"
         >
           <g fill="none" fill-rule="evenodd">
             <circle
@@ -28,14 +28,14 @@ class TermLoan extends Component {
             </g>
           </g>
         </svg>
-        <h1 class="action-required-card__Header-sc-1u7nvl-1 eNsDvE">
+        <h1 className="action-required-card__Header-sc-1u7nvl-1 eNsDvE">
           Add your business
         </h1>
-        <p class="action-required-card__Copy-sc-1u7nvl-0 eduwDW">
+        <p className="action-required-card__Copy-sc-1u7nvl-0 eduwDW">
           For term loan options, add your business
         </p>
-        <span class="action-required-card__Plus-sc-1u7nvl-4 kLcuEw" />
-        <p class="action-required-card__Copy-sc-1u7nvl-0 eduwDW">Add</p>
+        <span className="action-required-card__Plus-sc-1u7nvl-4 kLcuEw" />
+        <p className="action-required-card__Copy-sc-1u7nvl-0 eduwDW">Add</p>
       </div>
     );
   }
