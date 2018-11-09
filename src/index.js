@@ -14,11 +14,10 @@ class Content extends React.Component<{}, State> {
     toggle: null
   };
 
-  changeContent = e => {
+  changeContent = (tabname,e) => {
     this.setState({
-      toggle: "creditcard"
+      toggle: tabname
     });
-    console.log(this.state);
   };
   render() {
     return (
@@ -31,7 +30,7 @@ class Content extends React.Component<{}, State> {
                   className="tab__StyledTab-sc-6n7uxs-1 iylyVK"
                   icon="https://dxkdvuv3hanyu.cloudfront.net/design-assets/icons/pbr/credit-card-light.svg"
                   tabname="creditcard"
-                  onClick={this.changeContent}
+                  onClick={()=>this.changeContent("creditcard")}
                 >
                   <img
                     className="tab__Icon-sc-6n7uxs-2 cEpdSu"
@@ -43,7 +42,7 @@ class Content extends React.Component<{}, State> {
                   className="tab__StyledTab-sc-6n7uxs-1 dkSLxl"
                   icon="https://dxkdvuv3hanyu.cloudfront.net/design-assets/icons/pbr/loan-dark.svg"
                   tabname="termloan"
-                  onClick={this.changeContent}
+                  onClick={()=>this.changeContent("termloan")}
                 >
                   <img
                     className="tab__Icon-sc-6n7uxs-2 cEpdSu"
