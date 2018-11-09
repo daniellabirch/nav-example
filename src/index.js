@@ -22,32 +22,32 @@ class Content extends React.Component<{}, State> {
   };
   render() {
     return (
-      <div class="lending-health-card__StyledCard-sc-9ftaap-0 jDVoTD">
-        <div class="lending-health-card__HeightController-sc-9ftaap-3 juOckN">
-          <div class="lending-health-card__CardBody-sc-9ftaap-5 jRRaNO">
-            <section class="lending-health-card__Grid-sc-9ftaap-2 eGLyDO">
-              <div class="tab-menu__TabGroup-prdu2l-0 liCisV">
+      <div className="lending-health-card__StyledCard-sc-9ftaap-0 jDVoTD">
+        <div className="lending-health-card__HeightController-sc-9ftaap-3 juOckN">
+          <div className="lending-health-card__CardBody-sc-9ftaap-5 jRRaNO">
+            <section className="lending-health-card__Grid-sc-9ftaap-2 eGLyDO">
+              <div className="tab-menu__TabGroup-prdu2l-0 liCisV">
                 <div
-                  class="tab__StyledTab-sc-6n7uxs-1 iylyVK"
+                  className="tab__StyledTab-sc-6n7uxs-1 iylyVK"
                   icon="https://dxkdvuv3hanyu.cloudfront.net/design-assets/icons/pbr/credit-card-light.svg"
                   onClick={this.changeContent}
                 >
                   <img
-                    class="tab__Icon-sc-6n7uxs-2 cEpdSu"
+                    className="tab__Icon-sc-6n7uxs-2 cEpdSu"
                     src="https://dxkdvuv3hanyu.cloudfront.net/design-assets/icons/pbr/credit-card-light.svg"
                   />
-                  <span class="tab__Text-sc-6n7uxs-0 dUGzqi">Credit card</span>
+                  <span className="tab__Text-sc-6n7uxs-0 dUGzqi">Credit card</span>
                 </div>
                 <div
-                  class="tab__StyledTab-sc-6n7uxs-1 dkSLxl"
+                  className="tab__StyledTab-sc-6n7uxs-1 dkSLxl"
                   icon="https://dxkdvuv3hanyu.cloudfront.net/design-assets/icons/pbr/loan-dark.svg"
                   onClick={this.changeContent}
                 >
                   <img
-                    class="tab__Icon-sc-6n7uxs-2 cEpdSu"
+                    className="tab__Icon-sc-6n7uxs-2 cEpdSu"
                     src="https://dxkdvuv3hanyu.cloudfront.net/design-assets/icons/pbr/loan-dark.svg"
                   />
-                  <span class="tab__Text-sc-6n7uxs-0 dUGzqi">Term loan</span>
+                  <span className="tab__Text-sc-6n7uxs-0 dUGzqi">Term loan</span>
                 </div>
               </div>
               <CreditCard />
